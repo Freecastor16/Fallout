@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Fallout Companion Nexus</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body data-requires-auth="true">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Companion Control Hub</p>
+        <h1>Welcome, <span data-user-name>Vault Dweller</span></h1>
+      </div>
+      <nav class="header-actions">
+        <a class="btn ghost" href="index.html">Home</a>
+        <button class="btn" type="button" data-logout>Sign Out</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Your Modules</h2>
+        <p>Select a game module to open a focused workspace for characters, source material, and force management.</p>
+      </section>
+
+      <section class="grid">
+        <article class="card module-card">
+          <h3>Fallout Roleplaying Game</h3>
+          <p>Character sheets, campaign notes, sourcebook access, and party tools.</p>
+          <a class="btn" href="modules/roleplaying.html">Open Module</a>
+        </article>
+
+        <article class="card module-card">
+          <h3>Fallout: Wasteland Warfare</h3>
+          <p>Army builder shell, card library stub, and scenario prep utilities.</p>
+          <a class="btn" href="modules/wasteland-warfare.html">Open Module</a>
+        </article>
+
+        <article class="card module-card">
+          <h3>Fallout: Factions</h3>
+          <p>Crew planning, event roster views, and progression tracking shell.</p>
+          <a class="btn" href="modules/factions.html">Open Module</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

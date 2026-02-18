@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fallout Companion Nexus</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Vault-Tec Registered</p>
+        <h1>Fallout Companion Nexus</h1>
+      </div>
+      <nav class="header-actions" data-auth-state>
+        <a class="btn ghost" href="auth.html" data-when="guest">Log in</a>
+        <a class="btn" href="auth.html#register" data-when="guest">Create Account</a>
+        <a class="btn" href="dashboard.html" data-when="user">Open Dashboard</a>
+        <button class="btn ghost" type="button" data-logout data-when="user">Sign Out</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <h2>Your complete Fallout tabletop companion</h2>
+        <p>
+          Manage roleplaying characters, tune Wasteland Warfare armies, and organize Factions crews from a single
+          account. This starter shell mirrors the flow of a modern tabletop portal and is ready for future content
+          integration.
+        </p>
+        <div class="hero-actions" data-auth-state>
+          <a class="btn" href="auth.html#register" data-when="guest">Start your account</a>
+          <a class="btn" href="dashboard.html" data-when="user">Go to my modules</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>Fallout Roleplaying Game</h3>
+          <p>Create and edit character sheets, inventory, perks, and campaign records.</p>
+        </article>
+        <article class="card">
+          <h3>Fallout: Wasteland Warfare</h3>
+          <p>Configure forces, track unit cards, and maintain scenario loadouts.</p>
+        </article>
+        <article class="card">
+          <h3>Fallout: Factions</h3>
+          <p>Build crews, review roster options, and prepare settlement skirmishes.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
